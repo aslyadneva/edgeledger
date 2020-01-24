@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/80c7a8b68b.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./css/widescreen.css">
+
+  <!-- MapBox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+  <!-- MapBox End -->
+
+  <title>EdgeLedger Financial | Accounting</title>
+
+</head>
+<body id=#home>
+
+  <!-- Navbar -->
+  <nav class="navbar-transparent" id="navbar">
+    <h1 class="logo" data-aos="fade-right" data-aos-duration="1500">
+      <span class="text-primary">
+        <i class="fas fa-book-open"></i> Edge
+      </span>
+      Ledger
+    </h1>
+    <ul data-aos="fade-left" data-aos-duration="1500">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#what">What</a></li>
+      <li><a href="#who">Who</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header: Showcase -->
+  <header id="showcase">
+    <div class="showcase-overlay">
+      <div class="showcase-content" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="l-heading">
+          The Sky Is The Limit
+        </h1>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non illo fugit quis cupiditate, odio vel.</p>
+        <a href="#what" class="btn">Read More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section: What We DO -->
+  <section id="what" class="bg-light py-3">
+    <div class="container">
+      <h2 class="m-heading text-center"><span class="text-primary">What</span> We Do</h2>
+      <div class="items">
+        <div class="item" data-aos="flip-left" data-aos-duration="1500">
+          <i class="fas fa-university fa-2x"></i>
+          <div>
+            <h3>Investment Banking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, minus.</p>
+          </div>
+        </div>
+        <div class="item" data-aos="flip-left" data-aos-duration="1500">
+          <i class="fas fa-book-reader fa-2x"></i>
+          <div>
+            <h3>Portfolio Management</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, minus.</p>
+          </div>
+        </div>
+        <div class="item" data-aos="flip-left" data-aos-duration="1500">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>Tax & Custodial</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, minus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Who We Are -->
+  <section id="who">
+    <div class="who-img"></div>
+    <div class="who-text bg-dark p-3">
+      <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ullam nostrum, quos illum, quasi, enim id assumenda esse odio beatae labore blanditiis earum sed consequatur voluptate facilis praesentium aspernatur.</p>
+      <h3>Our Team</h3>
+      <ul class="list">
+        <li>Mark Smith: CEO</li>
+        <li>Shannon Johnson: CFO</li>
+        <li>John Corbit: Lead Accountant</li>
+        <li>Janet Williams: Investment Manager</li>
+        <li>Kara Jacksonh: Senior Accountant</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section: Clients -->
+  <section id="clients" class="py-3">
+    <div class="container">
+      <h2 class="m-heading text-center py-1">
+        <span class="text-primary">Our</span> Clients
+      </h2>
+      <div class="items">
+        <div><img src="images/logos/logo1.png"></div>
+        <div><img src="images/logos/logo2.png"></div>
+        <div><img src="images/logos/logo3.png"></div>
+        <div><img src="images/logos/logo4.png"></div>
+        <div><img src="images/logos/logo5.png"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2" data-aos="zoom-in" data-aos-duration="1000">
+      <h2>Contact Us</h2>
+      <p>Please use the form below to contact us.</p>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name='name' id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name='email' id="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" name='phone' id="phone">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name='message' id="message"></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-dark">
+      </form>
+    </div>
+    <div class="map" id='map' data-aos="zoom-in" data-aos-duration="1000"></div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2020, EdgeLedger, All Rights Reserved</p>
+    </div>
+    
+  </footer>
+
+
+  <!------------------------------ Javascript Files ----------------------------------->
+
+  <!-- JQuery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <!-- LOCAL JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL3SaBvp2vcFUEc9L-DzT87BXIPOhCNBQ&callback=initMap"
+    async defer></script>
+
+
+
+      
+  
+</body>
+</html>
